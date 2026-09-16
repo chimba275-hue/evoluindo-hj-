@@ -1,0 +1,6 @@
+{
+  "name": "evoluindohj",
+  "description": "Rotina saudável e emagrecimento para pessoas sem tempo: jejum com fases, IA para fotos de pratos, contador de déficit TDEE, coach IA e treinos rápidos.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

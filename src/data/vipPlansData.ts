@@ -1,0 +1,166 @@
+import { DietPlan } from "../types";
+
+export const VIP_DIET_PLANS: DietPlan[] = [
+  {
+    id: "anti_inflammatory_vip",
+    title: "Cardápio Anti-Inflamatório Seca-Barriga VIP",
+    subtitle: "Elimina inchaço visceral, retenção hídrica e estabiliza o cortisol",
+    idealFor: "Pessoas com abdômen estufado, digestão lenta ou que acordam cansadas",
+    dailyCalories: 1480,
+    isVip: true,
+    price: "R$ 19,90",
+    badgeText: "⭐ Especial VIP",
+    macros: { protein: 115, carbs: 40, fat: 82 },
+    meals: [
+      {
+        name: "Shot Termogênico Matinal (Em Jejum)",
+        type: "Quebra do Jejum",
+        prepTime: "2 minutos",
+        calories: 25,
+        protein: 0,
+        carbs: 2,
+        fat: 1,
+        ingredients: [
+          "50ml de água morna filtrada",
+          "Suco de 1/2 limão tahiti espremido na hora",
+          "1 colher (café) de cúrcuma pura com pitada de pimenta preta",
+          "10 gotas de própolis verde e raspas de gengibre fresco",
+        ],
+        steps:
+          "Misture os ingredientes vigorosamente e beba 10 minutos antes da primeira refeição sólida. Ativa enzimas hepáticas e reduz citocinas inflamatórias.",
+      },
+      {
+        name: "Quebra de Ouro: Ovos Pochê com Creme de Abacate & Cúrcuma",
+        type: "Quebra do Jejum",
+        prepTime: "6 minutos",
+        calories: 390,
+        protein: 24,
+        carbs: 6,
+        fat: 28,
+        ingredients: [
+          "3 ovos caipiras com gema mole",
+          "1/2 abacate maduro amassado com azeite extravirgem e flor de sal",
+          "Sementes de abóbora e girassol tostadas",
+          "Folhas de manjericão fresco e orégano",
+        ],
+        steps:
+          "Prepare os ovos com o mínimo de gordura. Disponha sobre a cama de abacate temperado. Gorduras monoinsaturadas de altíssima pureza com saciedade prolongada.",
+      },
+      {
+        name: "Almoço Reparador: Salmão Selvagem com Aspargos e Purê de Couve-Flor",
+        type: "Refeição Principal",
+        prepTime: "14 minutos",
+        calories: 585,
+        protein: 48,
+        carbs: 14,
+        fat: 34,
+        ingredients: [
+          "200g de filé de salmão grelhado com crosta de ervas finas",
+          "1 xícara de purê de couve-flor com azeite de oliva e noz moscada",
+          "Aspargos frescos ou vagens salteadas no alho",
+          "Salada de rúcula escura com vinagre de maçã não pasteurizado",
+        ],
+        steps:
+          "Grelhe o salmão na frigideira quente por 4 minutos de cada lado. O purê de couve-flor imita a textura de batata com apenas 15% dos carboidratos e zero impacto inflamatório.",
+      },
+      {
+        name: "Jantar Anti-Inchaço: Caldo Dourado de Frango com Gengibre e Espinafre",
+        type: "Jantar Leve",
+        prepTime: "10 minutos",
+        calories: 480,
+        protein: 43,
+        carbs: 18,
+        fat: 19,
+        ingredients: [
+          "180g de peito de frango orgânico desfiado",
+          "Caldinho quente aromatizado com gengibre e louro",
+          "Espinafre fresco cozido no próprio vapor do caldo",
+          "Azeite extravirgem com acidez < 0.2% regado na finalização",
+        ],
+        steps:
+          "Aqueça o caldo levemente encorpado, junte o frango e as folhas verdes. Refeição de digestão rápida que garante sono profundo e reparador.",
+      },
+    ],
+  },
+  {
+    id: "plateau_breaker_vip",
+    title: "Cardápio Quebra de Platô Metabólico VIP",
+    subtitle: "Ciclo de carboidratos estratégico (Carb-Cycling) para destravar a balança",
+    idealFor: "Quem estagnou no mesmo peso há mais de 10 dias consecutivos",
+    dailyCalories: 1590,
+    isVip: true,
+    price: "R$ 19,90",
+    badgeText: "🔥 Acelerador VIP",
+    macros: { protein: 140, carbs: 55, fat: 78 },
+    meals: [
+      {
+        name: "Café Turbo Termogênico (MCT + Canela)",
+        type: "Quebra do Jejum",
+        prepTime: "3 minutos",
+        calories: 140,
+        protein: 2,
+        carbs: 1,
+        fat: 14,
+        ingredients: [
+          "200ml de café coado ou espresso forte",
+          "1 colher (sopa) de óleo TCM ou óleo de coco extravirgem",
+          "1 colher (café) de canela do Ceilão",
+          "Gotas de estévia 100% pura (opcional)",
+        ],
+        steps:
+          "Bata no mixer ou liquidificador por 15 segundos até formar uma espuma cremosa. Os triglicerídeos de cadeia média vão direto para o fígado como combustível cetônico.",
+      },
+      {
+        name: "Refeição Densidade: Filé de Mignon com Abóbora Cabotiá Assada",
+        type: "Refeição Principal",
+        prepTime: "12 minutos",
+        calories: 620,
+        protein: 56,
+        carbs: 26,
+        fat: 31,
+        ingredients: [
+          "200g de medalhão de filé mignon ou alcatra grelhada ao ponto",
+          "150g de abóbora cabotiá assada com alecrim e azeite",
+          "Salada colorida de agrião, tomate cereja e palmito",
+          "Vinagrete leve de limão siciliano",
+        ],
+        steps:
+          "A abóbora cabotiá fornece a dose milimetricamente controlada de glicose para restaurar a conversão dos hormônios T4 em T3 na tireoide sem interromper a perda de gordura.",
+      },
+      {
+        name: "Bowl Proteico de Fechamento: Iogurte Proteico Turbo com Morangos",
+        type: "Lanche Rápido",
+        prepTime: "4 minutos",
+        calories: 360,
+        protein: 42,
+        carbs: 18,
+        fat: 12,
+        ingredients: [
+          "160g de iogurte natural de alta densidade proteica",
+          "1 scoop (30g) de Whey isolado sabor baunilha",
+          "6 morangos frescos picados",
+          "1 colher de sementes de chia ativadas",
+        ],
+        steps:
+          "Misture o whey vigorosamente ao iogurte até virar uma consistência de Danoninho fitness. Alta carga de aminoácidos para recuperação muscular e saciedade noturna.",
+      },
+      {
+        name: "Jantar Cetogênico Leve: Tilápia com Crosta de Castanhas e Brócolis",
+        type: "Jantar Leve",
+        prepTime: "11 minutos",
+        calories: 470,
+        protein: 40,
+        carbs: 10,
+        fat: 21,
+        ingredients: [
+          "180g de filé de tilápia fresca",
+          "20g de castanhas trituradas para empanar",
+          "Brócolis e alho-poró refogados no azeite",
+          "Limão para espremer",
+        ],
+        steps:
+          "Pressione a crosta de castanha no peixe e doure rapidamente na frigideira antiaderente. Prato rápido, rico em zinco e selênio essenciais.",
+      },
+    ],
+  },
+];
